@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+
+    <title>.: ConstruJA :.</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font-awesome.css" type="text/css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <!-- Cabecalho --------------------------------------------------------------->
+    <header>
+        <nav id="menudesk" class="navbar-fixed-top">
+            <!-- Atendimento Desktop -->
+            <h3 class=" atendimento-topo">Atendimento: </h3>
+            <div class="atendimento">
+                <p>Interior SP<br/><a href="tel:+5511900000000"> 0300 10 20 000</a></p>
+                <p>Grande SP <br/><a href="tel:+5511900000000">11 2732 2000</a></p>
+                <p>Whats <br/><a href="tel:+5511900000000">11 90000-0000</a></p>
+            </div>
+            <!-- Menu de Links Desktop -->
+            <ul class="menulink">
+                <li><a class="quemsomos" href="quemsomos.html">Quem Somos</a></li>
+                <li><a class="contatos" href="contato.html">Contato</a></li>
+                <li><a class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="fa fa-lock" aria-hidden="true"></i> Área Restrita</a>
+                    <ul class="dropdown dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">Intranet</a></li>
+                        <li><a href="#">Área do Representante</a></li>
+                        <li><a href="#">Call Center</a></li>
+                    </ul>
+                </li>
+                <li><a class="dropdown cliente dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="fa fa-user-circle" aria-hidden="true"></i> Painel do Cliente</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <li><a href="#">Meus Pedidos</a></li>
+                        <li><a href="#">Meu Cadastro</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Acesso Desktop -->
+            <div class="acesso">
+                <div class="">
+                    <p class="">Olá, faça seu <a class="login" data-toggle="modal" href="#normalModal"><i class="fa fa-user-circle-o" aria-hidden="true"></i> LOGIN</a> ou <a class="cadastre" href="cadastrese.html"><i class="fa fa-user-plus" aria-hidden="true"></i> CADASTRE-SE</a></p>
+                </div>
+                <!-- MODAL -->
+                <div id="normalModal" class="modal fade">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title">Faça seu pedido on-line:</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form-signin">
+                                    <label for="inputEmail" class="sr-only">Nome de Usuário</label>
+                                    <h4 class="modal-title" style="text-align:left;">Nome de Usuário:</h4>
+                                    <input type="email" id="inputEmail" class="form-control" placeholder="Digite aqui o seu usuário" required autofocus>
+                                    </br>
+                                    <label for="inputPassword" class="sr-only">Senha</label>
+                                    <h4 class="modal-title" style="text-align:left;">Senha:</h4>
+                                    <input type="password" id="inputPassword" class="form-control" placeholder="Digite aqui a sua senha" required>
+                                    </br>
+                                    <label><a> Esqueceu sua senha? Clique aqui.</a></label></br>
+                                    <label><a> Primeiro acesso? Solicite sua senha.</a></label></br>
+                                    </br>
+                                    <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+                </section>
+                <!--Carrinho-->
+                <div class="adm">
+                    <p class="center">NOME COMPLETO</p>
+                    <div class="dropdown">
+                        <a class="dropdown-toggle" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="fa fa-shopping-basket" aria-hidden="true"></i><span class="badge">4</span></a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
+                            <h3>Total de Itens: 3 </h3>
+                            <div>
+                                <img src="" alt="">
+                                <p>32-109 CAP ESG 100 KRONA</p>
+                                <p>Qtd: 4</p>
+                                <p>Preço: R$ 1,50</p>
+                            </div>
+                            <h3>Preço Total: R$ 20,00</h3>
+                            <button class="btn">Visualizar Carrinho</button>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <nav id="cabecalho">
+
+            <!-- LOGO -->
+            <a href="index.html" id="logo"><img src="images/logo.png" alt="Logo-Construja"></a>
+
+            <!--Menu Sanduiche-->
+            <ul id="menu-sanduiche">
+                <li><a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
+                <li><a href="quemsomos.html" class="hide">QUEM SOMOS</a></li>
+                <li><a href="trabalheconosco.html" class="hide">TRABALHE CONOSCO</a></li>
+                <li><a href="feirao.html" class="hide">FEIRÃO</a></li>
+                <li><a href="contato.html" class="hide">CONTATO</a></li>
+                <li>
+                    <a href="#" class="divisoria"></a>
+                </li>
+                <li><a href="revista.html" class="hide">REVISTA</a></li>
+                <li><a href="premios.html" class="hide">PREMIAÇÕES</a></li>
+                <li><a href="patrocinio.html" class="hide">PATROCINIO ESPORTIVO</a></li>
+                <li><a href="guia.html" class="hide">GUIA PRÁTICO</a></li>
+            </ul>
+
+            <!--Login-->
+            <ul id="menu-login">
+                <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                <li><a href="#" class="hide"><i class="fa fa-user-circle-o" aria-hidden="true"></i>LOGIN</a></li>
+                <li><a href="#" class="hide"><i class="fa fa-user-plus" aria-hidden="true"></i>CADASTRE-SE</a></li>
+                <li><a href="#" class="hide"><i class="fa fa-lock" aria-hidden="true"></i>ÁREA RESTRITA</a></li>
+            </ul>
+
+            <!--Carrinho-->
+            <section id="menu-carrinho" class="dropdown">
+                <a class="dropdown-toggle" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="fa fa-shopping-basket" aria-hidden="true"></i><span class="badge">4</span></a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
+                    <h3>Total de Itens: 3 </h3>
+                    <div>
+                        <img src="" alt="">
+                        <p>32-109 CAP ESG 100 KRONA</p>
+                        <p>Qtd: 4</p>
+                        <p>Preço: R$ 1,50</p>
+                    </div>
+                    <h3>Preço Total: R$ 20,00</h3>
+                    <button class="btn">Visualizar Carrinho</button>
+                </ul>
+            </section>
+
+            <!-- Busca -->
+            <section id="busca">
+                <input type="search" placeholder="Digite aqui o que procura">
+                <button type="submit">Buscar<!--Icone Lupa--></button>
+            </section>
+
+            <!--Telefones-->
+            <section id="telefones">
+                <div><i class="fa fa-headphones" aria-hidden="true"></i></div>
+                <div>Interior SP<br/><a href="tel:03001020000">03001020000</a></div>
+                <div>Grande SP<br/><a href="tel:1127322000">(11) 27322000</a></div>
+                <div>Whats<br/><a href="tel:+5511900000000">(11) 900000000</a></div>
+            </section>
+        </nav>
+
+        <!--Categorias-->
+        <nav id="categorias">
+            <li><a id="home" href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+            <li><a href="categorias/telha.html">TELHAS E FORROS</a></li>
+            <li><a href="categorias/esquadria.html">ESQUADRIAS</a></li>
+            <li><a href="categorias/pia.html">PIAS E GABINETES</a></li>
+            <li><a href="categorias/louca.html">LOUÇAS SANITÁRIAS</a></li>
+            <li><a href="categorias/ferramentas.html">FERRAMENTAS ELÉTRICAS</a></li>
+            <li><a href="categorias/ferragens.html">FERRAGENS E FERRAMENTAS</a></li>
+            <li><a href="categorias/eletrica.html">ELÉTRICA</a></li>
+            <li><a href="categorias/pintura.html">PINTURA</a></li>
+            <li><a href="categorias/hidraulica.html">HIDRÁULICA</a></li>
+        </nav>
+    </header>
+
+
+    <section class="main">
+
+        <!--Banner-->
+        <div id="banner">
+            <div id="carouselBanner" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselBanner" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselBanner" data-slide-to="1"></li>
+                    <li data-target="#carouselBanner" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="images/banner.png" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="images/banner.png" alt="...">
+                    </div>
+                </div>
+
+                <!-- Controles -->
+                <a class="left carousel-control" href="#carouselBanner" role="button" data-slide="prev">
+                    <i style="font-size:4em; margin-top:40%;" class="fa fa-caret-left" aria-hidden="true"></i>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="right carousel-control" href="#carouselBanner" role="button" data-slide="next">
+                    <i style="font-size:4em; margin-top:40%;" class="fa fa-caret-right" aria-hidden="true"></i>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+        </div>
+
+        <!--divisoria-->
+        <div class="divisoria"></div>
+
+        <!--Links -->
+        <div class="atalhos">
+            <ul class="links">
+                <li><a href="promocoes.html"><i class="fa fa-usd" aria-hidden="true"></i> PROMOÇÕES</a></li>
+                <li><a href="lancamentos.html"><i class="fa fa-plus" aria-hidden="true"></i> LANÇAMENTOS</a></li>
+                <li><a href="saldao.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> SALDÃO</a></li>
+                <li><a href="janews.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i> JA NEWS</a></li>
+                <li><a href="feirao.html"><i class="fa fa-wrench" aria-hidden="true"></i> FEIRÃO</a></li>
+            </ul>
+        </div>
+
+        <!--Newsletter -->
+        <div class="newsletter">
+            <p><i class="fa fa-envelope-open-o" aria-hidden="true"></i> RECEBA OFERTAS EXCLUSIVAS EM SEU EMAIL</p>
+            <form>
+                <input type="email" placeholder="Digite aqui o seu e-mail">
+                <button type="submit" value="Enviar">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <!-- CORPO DA PÁGINA -->
+    <article class="wrapper">
+        <!--Vitrine-->
+        <section class="vitrine">
+            <div id="imgVitrine"><img src="images/Quadrados_Menu2.png" alt="Vitrine"></div>
+            <ul id="vitrine-produtos">
+                <li>
+                    <a href="#">
+                        <img src="images/produto.jpg" alt="Vitrine">
+                        <p class="codigo">13-276</p>
+                        <p class="titulo">PORT ELETR IPR8010*</p>
+                        <p class="prodmarca">INTELBRAS</p>
+                        <p class="qtd">Qtde. Venda: 1 PÇ</p>
+                        <a class="comprar btn" data-toggle="modal" href="#normalModal2">COMPRAR</a>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/produto.jpg" alt="Vitrine">
+                        <p class="codigo">07-331</p>
+                        <p class="titulo">LAMP LED A60 06W 6500K BIV</p>
+                        <p class="prodmarca">FOXLUX</p>
+                        <p class="qtd">Qtde. Venda: 1 PÇ</p>
+                        <a class="comprar btn" data-toggle="modal" href="#normalModal2">COMPRAR</a>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/produto.jpg" alt="Vitrine">
+                        <p class="codigo">90-116</p>
+                        <p class="titulo">ESPUMA POLIUR 500ML-340G</p>
+                        <p class="prodmarca">FERJA</p>
+                        <p class="qtd">Qtde. Venda: 1 PÇ</p>
+                        <a class="comprar btn" data-toggle="modal" href="#normalModal2">COMPRAR</a>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/produto.jpg" alt="Vitrine">
+                        <p class="codigo">58-218</p>
+                        <p class="titulo">CENTRO DIST DISJ DIN 04</p>
+                        <p class="prodmarca">AMANCO</p>
+                        <p class="qtd">Qtde. Venda: 1 PÇ</p>
+                        <a class="comprar btn" data-toggle="modal" href="#normalModal2">COMPRAR</a>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/produto.jpg" alt="Vitrine">
+                        <p class="codigo">13-276</p>
+                        <p class="titulo">PORT ELETR IPR8010*</p>
+                        <p class="prodmarca">INTELBRAS</p>
+                        <p class="qtd">Qtde. Venda: 1 PÇ</p>
+                        <a class="comprar btn" data-toggle="modal" href="#normalModal2">COMPRAR</a>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/produto.jpg" alt="Vitrine">
+                        <p class="codigo">07-331</p>
+                        <p class="titulo">LAMP LED A60 06W 6500K BIV</p>
+                        <p class="prodmarca">FOXLUX</p>
+                        <p class="qtd">Qtde. Venda: 1 PÇ</p>
+                        <a class="comprar btn" data-toggle="modal" href="#normalModal2">COMPRAR</a>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/produto.jpg" alt="Vitrine">
+                        <p class="codigo">90-116</p>
+                        <p class="titulo">ESPUMA POLIUR 500ML-340G</p>
+                        <p class="prodmarca">FERJA</p>
+                        <p class="qtd">Qtde. Venda: 1 PÇ</p>
+                        <a class="comprar btn" data-toggle="modal" href="#normalModal2">COMPRAR</a>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/produto.jpg" alt="Vitrine">
+                        <p class="codigo">58-218</p>
+                        <p class="titulo">CENTRO DIST DISJ DIN 04</p>
+                        <p class="prodmarca">AMANCO</p>
+                        <p class="qtd">Qtde. Venda: 1 PÇ</p>
+                        <a class="comprar btn" data-toggle="modal" href="#normalModal2">COMPRAR</a>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/produto.jpg" alt="Vitrine">
+                        <p class="codigo">13-276</p>
+                        <p class="titulo">PORT ELETR IPR8010*</p>
+                        <p class="prodmarca">INTELBRAS</p>
+                        <p class="qtd">Qtde. Venda: 1 PÇ</p>
+                        <a class="comprar btn" data-toggle="modal" href="#normalModal2">COMPRAR</a>
+                    </a>
+                </li>
+            </ul>
+            <!-- MODAL -->
+            <div id="normalModal2" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <a class="login btn" data-toggle="modal" href="#normalModal">Efetuar Login</a>
+                            <a class="cadastro btn">Não Tenho Cadastro</a>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- /.modal -->
+        </section>
+        <aside class="sidebar">
+
+            <!--Revista-->
+            <div class="revista" style="margin-top:0;">
+                <a href="#">
+                    <h3>REVISTA</h3>
+                    <img src="images/revista.jpg" alt="revista" title="Revista" /></a>
+                <p><a href="#">EDIÇÕES ANTERIORES</a></p>
+            </div>
+
+            <!-- Guia -->
+            <div class="guia">
+                <a href="#">
+                    <h3><i class="fa fa-map-o" aria-hidden="true"></i> GUIA PRÁTICO</h3>
+                    <img src="images/guia.png" alt="guia" title="Guia Prático" /></a>
+            </div>
+
+            <!-- Premiação -->
+            <div class="premiacao">
+                <a href="#">
+                    <h3><i class="fa fa-trophy" aria-hidden="true"></i> PREMIAÇÕES</h3>
+                    <img src="images/premio.jpg" alt="premio" title="Premiações" /></a>
+            </div>
+
+            <!-- Esporte -->
+            <div class="esporte">
+                <a href="">
+                    <h3><i class="fa fa-futbol-o" aria-hidden="true"></i> PATROCINIO ESPORTIVO</h3>
+                    <img src="images/esporte.jpg" alt="esporte" title="Patrocinio Esportivo" /></a>
+            </div>
+        </aside>
+         <!--Publicidade-->
+        <section class="pubAnuncio">
+            <img src="images/anuncio1.jpg" alt="Anuncio">
+            <!--Anúncio1-->
+            <img src="images/anuncio2.jpg" alt="Anuncio">
+            <!--Anúncio2-->
+            <img src="images/anuncio2.jpg" alt="Anuncio">
+            <!--Anúncio3-->
+        </section>
+
+        <!-- Marcas -->
+        <section class="marcas">
+        </section>
+    </article>
+    <!--Facebook Mobile -->
+    <section class="facebook">
+        <div id="div1">
+            <p>Curta a Construjá no Facebook <i class="fa fa-thumbs-o-up" aria-hidden="true"></i></p>
+        </div>
+    
+    <div class="fb-page" data-href="https://www.facebook.com/pages/Construj%C3%A1/164378027086964" data-width="930" data-height="1000" data-hide-cover="false" data-show-facepile="false" data-show-posts="true">
+        <div class="fb-xfbml-parse-ignore">
+            <blockquote cite="https://www.facebook.com/pages/Construj%C3%A1/164378027086964"><a href="https://www.facebook.com/pages/Construj%C3%A1/164378027086964">Construjá</a></blockquote>
+        </div>
+    </div>
+    </section>
+    <section class="social">
+        <!--Redes Sociais do Footer-->
+        <div class="socialdesk redes-sociais">
+            <h3>REDES SOCIAIS</h3>
+            <a href="https://www.facebook.com/ConstrujaDistribuidora/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+            <!--Facebook-->
+            <a href="https://www.instagram.com/construja/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <!--Instagram-->
+            <a href="https://www.youtube.com/channel/UCoLZHaRgxZwP5X7e81LlQOw"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+            <!--Youtube-->
+        </div>
+
+        <!--Baixe nosso App-->
+        <div class=" socialdesk app">
+            <h3>BAIXE NOSSO APP</h3>
+            <a href="https://itunes.apple.com/br/app/netflix/id363590051?mt=8"><i class="fa fa-apple" aria-hidden="true"></i></a>
+            <!--IOS-->
+            <a href="https://play.google.com/store/apps/details?id=com.facebook.katana&hl=pt_BR"><i class="fa fa-android" aria-hidden="true"></i></a>
+            <!--Android-->
+        </div>
+    </section>
+    <div class="divisoria">
+    </div>
+    <footer>
+        <section class="rodape">
+            <div class="logo-rodape">
+                <a href="index.html"><img src="images/logofooter.png" alt="LogoFooter"></a>
+            </div>
+            <!--Logo-->
+
+            <!--Redes Sociais do Footer-->
+            <div class="socialmobile redes-sociais">
+                <p>REDES SOCIAIS</p>
+                <a href="https://www.facebook.com/ConstrujaDistribuidora/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                <!--Facebook-->
+                <a href="https://www.instagram.com/construja/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <!--Instagram-->
+                <a href="https://www.youtube.com/channel/UCoLZHaRgxZwP5X7e81LlQOw"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+                <!--Youtube-->
+            </div>
+
+            <!--Baixe nosso App-->
+            <div class="socialmobile app">
+                <p>BAIXE NOSSO APP</p>
+                <a href="https://itunes.apple.com/br/app/netflix/id363590051?mt=8"><i class="fa fa-apple" aria-hidden="true"></i></a>
+                <!--IOS-->
+                <a href="https://play.google.com/store/apps/details?id=com.facebook.katana&hl=pt_BR"><i class="fa fa-android" aria-hidden="true"></i></a>
+                <!--Android-->
+            </div>
+
+            <div class="divisoria-footer"></div>
+                <!-- Links -->
+                <div class="links-footer">
+
+                    <!-- link-institucional -->
+                    <nav class="link-institucional">
+                        <h3>Institucional</h3>
+                        <a href="quemsomos.html">Quem somos</a>
+                        <a href="localizacao.html">Localização</a>
+                        <a href="trabalheconosco;html">Trabalhe conosco</a>
+                        <a href="contato.html">Contato</a>
+                        <a href="miv.html">Manual Id. Visual</a>
+                    </nav>
+
+                    <!-- link-nossosprodutos -->
+                    <nav class="link-nossosprodutos">
+                        <h3>Nossos Produtos</h3>
+                        <a href="revista.html">Revista</a>
+                        <a href="guia.html">Guia Prático</a>
+                        <a href="lancamentos.html">Lançamentos</a>
+                        <a href="promocoes.html">Promoções</a>
+                        <a href="saldao.html">Saldão</a>
+                    </nav>
+
+                    <!-- link-acessos -->
+                    <nav class="link-acessos">
+                        <h3>Acessos</h3>
+                        <a href="#">Login / Cadastro</a>
+                        <a href="intranet.html">Intranet</a>
+                        <a href="representante.html">Área Representante</a>
+                        <a href="callcenter.html">Call Center</a>
+                        <a href="boleto.html">Atualize seu boleto</a>
+                    </nav>
+                </div>
+            <!-- content -->
+
+            <!--Segurança-->
+            <div class="seguranca">
+                <p>SEGURANÇA</p>
+                <a href="#"><img src="images/siteblindado.png" alt="Seguranca"></a>
+            </div>
+
+            <!--Forma de Pagamento-->
+            <div class="pagamento">
+                <p>FORMAS DE PAGAMENTO</p>
+                <a class="pagamentoMobile" href="#"><img src="images/pagamento2.jpg" alt="Forma de Pagamento" style="max-width: 90%"></a>
+                <a class="pagamentoDesktop" href="#"><img src="images/formaPagto.png" alt="Forma de Pagamento" style="max-width: 90%"></a>
+            </div>
+
+        </section>
+        <!-- rodape -->
+
+        <!--Endereço-->
+        <section class="endereco">
+            <p> SAC: <a href="mailto:sac@construja.com.br?subject=Contato-Site"> sac@construja.com.br</a> - <a href="tel:1127322003">(11) 2732-2003</a></br>
+                Estrada da Vovó Carolina, 777 - Jardim Palanque - São Paulo - SP - CEP 08473-370</br>
+                Construjá - Copyright &copy; 2014. Todos os Direitos Reservados
+            </p>
+        </section>
+    </footer>
+            <!--Scripts-->
+
+</body>
+
+</html>

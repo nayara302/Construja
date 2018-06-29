@@ -1,0 +1,757 @@
+    @font-face {
+    font-family: "Myriad Pro";
+    src: url(fonts/MyriadPro-Regular.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+body {
+    background: #F1F1F1;
+    max-width: 100%;
+    text-align: center;
+    font-family: "Nexa", "Myriad Pro";
+}
+
+h3 {
+    margin: 0;
+    font-size: 1.17em;
+    font-weight: bold;
+}
+
+#cabecalho-desk,
+.sidebar,
+.links-footer {
+    display: none;
+}
+
+
+/* -------------------- Cabecalho Mobile ------------------------------------------*/
+
+#cabecalho-topo {
+    padding: 15px 8px;
+}
+
+#logo img {
+    max-width: 50%;
+}
+
+#menu-login,
+#menu-carrinho,
+#menu-sanduiche {
+    display: inline-block;
+    font-size: 1.6em;
+    padding-left: 5%;
+}
+
+#menu-sanduiche a i,
+#menu-login a i,
+#menu-carrinho a i {
+    color: #DE2227;
+}
+
+#menu-sanduiche a.hide,
+#menu-login a.hide {
+    display: none;
+}
+
+
+/* ---------- Busca -------------------------*/
+
+#busca {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    padding: 0 15px 15px 15px;
+}
+
+#busca input {
+    width: 100%;
+    padding: 2.5%;
+    border: 1pt solid #292D6B;
+    border-radius: 3pt 0 0 3pt;
+}
+
+#busca button {
+    background-color: #292D6B;
+    color: #FFF;
+    padding: 2.5%;
+    border: none;
+    border-radius: 0 3pt 3pt 0;
+}
+
+
+/* ---------- Telefones -------------------------*/
+
+#telefones {
+    max-width: 100%;
+    background: #282E6C;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+#telefones div {
+    color: #FFF;
+    margin: 5pt auto;
+    text-align: center;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+#telefones div a {
+    color: #FFF;
+    font-style: normal;
+}
+
+#telefones div i {
+    font-size: 2.5em;
+}
+
+
+/* -------------------- Categorias Mobile ------------------------------------------*/
+
+#home {
+    display: none;
+}
+
+.categorias {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    color: #FFF;
+    background-color: #D20D02;
+    text-align: center;
+}
+
+.categorias a {
+    font-size: 0.95em;
+    padding: 0.8em 1em;
+    color: #FFF;
+    -moz-text-decoration: none;
+    text-decoration: none;
+    align-content: space-between;
+}
+
+.categorias a:hover:not(#home) {
+    background-color: #AA0B02;
+}
+
+
+/* -------------------- Banner Mobile ------------------------------------------*/
+
+.banner-desk {
+    display: none;
+}
+
+.banner-resp img {
+    align-content: center;
+    max-width: 100%;
+}
+
+.divisoria {
+    height: 9pt;
+    background-color: #D20D02;
+}
+
+
+/* -------------------- Newsletter Mobile ------------------------------------------*/
+
+.newsletter {
+    color: #333;
+    padding: 25pt 10pt;
+}
+
+.newsletter p {
+    font-size: 1.2em;
+    padding: 5pt 5pt;
+    text-align: center;
+}
+
+.newsletter form {
+    text-align: center;
+    display: inline;
+    margin: auto;
+}
+
+.newsletter form input {
+    border-radius: 5pt 0 0 5pt;
+    padding: 7.8pt 8%;
+    border: none;
+}
+
+.newsletter form button {
+    padding: 8pt 8%;
+    border: none;
+    border-radius: 0 5pt 5pt 0;
+    background-color: #292D6B;
+    color: #FFF;
+}
+
+
+/* -------------------- Links Mobile ------------------------------------------*/
+
+.links {
+    margin-top: 10pt;
+    vertical-align: middle;
+}
+
+.links div {
+    display: block;
+    padding: 10pt 30pt;
+    margin: 5pt 10pt;
+    background-color: #282E6C;
+}
+
+.links div a {
+    color: #FFF;
+    -moz-text-decoration: none;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+.links div a i {
+    padding-right: 10px;
+}
+
+.links div:hover {
+    background-color: #005FAA;
+}
+
+
+/* -------------------- Vitrine Mobile ------------------------------------------*/
+
+.titulopagina {
+    margin: auto;
+    background-color: #FFF;
+    text-align: left;
+}
+
+.titulopagina h3 {
+    padding: 5px;
+    width: 90px;
+    text-align: center;
+    color: #FFF;
+    background-color: #282E6C;
+}
+
+#vitrine-produtos {
+    text-align: center;
+}
+
+#vitrine-produtos div {
+    max-width: 45%;
+    border: 1px solid #AAA;
+    padding: 10px;
+    margin: 15px 5px;
+    display: inline-block;
+}
+
+#vitrine-produtos div a {
+    -moz-text-decoration: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+#vitrine-produtos div a img {
+    max-width: 100%;
+    padding-bottom: 5px;
+}
+
+#vitrine-produtos div p {
+    padding-bottom: 5px;
+}
+
+.codigo,
+.titulo,
+.prodmarca {
+    color: #222;
+    font-size: 0.9em;
+}
+
+.qtd {
+    font-size: 1.0em;
+    color: #AAA;
+}
+
+
+/* -------------------- Facebook Mobile ------------------------------------------*/
+
+.facebook {
+    background-color: #292D6B;
+}
+
+.facebook #div1 {
+    text-align: center;
+    color: #FFF;
+    font-size: 2.0em;
+    padding: 10px;
+}
+
+#plugin {
+    padding: 30px;
+}
+
+
+/* -------------------- Publicidade Mobile ----------------------------------------*/
+
+.pubAnuncio {
+    max-width: 100%;
+    display: inline-block;
+    padding: 2%;
+    text-align: center;
+}
+
+.pubAnuncio img {
+    max-width: 95%;
+    padding-bottom: 2%;
+}
+
+.pubAnuncio img:nth-child(3) {
+    display: none;
+}
+
+
+/* -------------------- Footer Mobile ----------------------------------------*/
+
+.pagamentoDesktop {
+    display: none;
+}
+
+.rodape {
+    background-color: #292D6B;
+    color: #FFF;
+    text-align: center;
+}
+
+.rodape i {
+    padding: 5px;
+}
+
+.logo-rodape img {
+    max-width: 50%;
+    margin: 30px;
+}
+
+.redes-sociais,
+.app,
+.pagamento,
+.seguranca {
+    padding-bottom: 20px;
+    display: inline-block;
+    max-width: 50%;
+    margin: auto;
+}
+
+.redes-sociais p,
+.app p,
+.pagamento p,
+.seguranca p {
+    font-size: 1.0em;
+}
+
+.redes-sociais {
+    padding-right: 30px;
+}
+
+.redes-sociais a {
+    color: #FFF;
+    font-size: 2.5em;
+}
+
+.app a {
+    color: #FFF;
+    font-size: 2.5em;
+}
+
+.socialdesk {
+    display: none;
+}
+
+.endereco {
+    background: #005FAA;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.0em;
+    padding: 8pt;
+}
+
+.endereco p {
+    margin: 10px 0;
+}
+
+.endereco a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1.0em;
+}
+
+
+/* -------------------- Desktop ----------------------------------------*/
+
+@media screen and (min-width: 1025px) {
+    #menu-sanduiche,
+    #menu-carrinho,
+    #menu-login {
+        display: none;
+    }
+    /* -------------------- Cabecalho Desktop ------------------------------------------*/
+    #cabecalho-desk {
+        display: block;
+    }
+    #cabecalho-desk {
+        height: 54px;
+        background-color: #282E6C;
+        color: white;
+    }
+    #cabecalho-desk div p {
+        display: inline-block;
+        padding-right: 10px;
+    }
+    #cabecalho-desk nav a,
+    .acesso a {
+        -moz-text-decoration: none;
+        text-decoration: none;
+        list-style: none;
+    }
+    #cabecalho-topo {
+        padding: 0;
+        margin: 0;
+    }
+    .cabecalho {
+        display: -webkit-box;
+        /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box;
+        /* OLD - Firefox 19- (buggy but mostly works) */
+        display: -ms-flexbox;
+        /* TWEENER - IE 10 */
+        display: -webkit-flex;
+        /* NEW - Chrome */
+        display: flex;
+        /* NEW, Spec - Opera 12.1, Firefox 20+ */
+        padding: 75px 70px 25px;
+    }
+    .atendimento,
+    .acesso,
+    .menulink,
+    .dropdown {
+        display: inline-block;
+        padding-top: 5px;
+    }
+    .atendimento {
+        font-size: 0.78em;
+        text-align: center;
+    }
+    .atendimento a {
+        color: #FFF;
+    }
+    .atendimento-topo {
+        display: inline-block;
+        font-size: 1.0em;
+        padding-left: 20px;
+        padding-right: 10px;
+        text-transform: uppercase;
+        align-items: center;
+    }
+    .quemsomos,
+    .contatos {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .menulink,
+    .atendimento,
+    .acesso {
+        padding-right: 60px;
+    }
+    .menulink a {
+        font-size: 1.1em;
+        color: #FFF;
+        padding-left: 19px;
+        padding-right: 19px;
+    }
+    .menulink a:hover {
+        background-color: #005FAA;
+        padding: 16px;
+    }
+    .acesso div p a {
+        color: #D20D02;
+        font-weight: bold;
+    }
+    .cliente,
+    .adm {
+        display: none;
+    }
+    a#logo {
+        max-width: 100%;
+    }
+    #logo img {
+        max-width: 100%;
+    }
+    /*  --- MODAL --- */
+    .modal-dialog {
+        width: 400px;
+    }
+    .modal-title {
+        color: #D20D02;
+    }
+    .btn,
+    .btn-lg,
+    .btn-primary,
+    .btn-block {
+        background-color: #282E6C;
+    }
+    /*  --- DROPDOWN --- */
+    .dropdown-menu {
+        background-color: #005FAA;
+        max-width: none;
+        max-height: none;
+        font-size: 16px;
+    }
+    .dropdown-menu li a {
+        color: #FFF;
+    }
+    .dropdown-menu a:hover {
+        padding: 5px 16px;
+    }
+    /* ---------- Busca Desktop -------------------------*/
+    #busca {
+        padding: 20px;
+        width: 450px;
+        border: none;
+        margin-left: 70px;
+        margin-right: 30px;
+    }
+    /* ---------- Telefones Desktop ------------------------- */
+    #telefones div {
+        font-size: 0.85em;
+        padding-top: 20px;
+        padding-left: 10px;
+    }
+    #telefones,
+    #telefones div,
+    #telefones div a {
+        background-color: transparent;
+        color: #000;
+    }
+    /* -------------------- Categorias Desktop ------------------------------------------*/
+    #home {
+        display: inline;
+        font-size: 1.6em;
+        padding: 0;
+        padding-right: 10px;
+    }
+    .categorias:not(#home) {
+        align-items: center;
+        padding-left: 2%;
+    }
+    .categorias a:not(#home) {
+        font-weight: bold;
+    }
+    /* -------------------- Banner Desktop ------------------------------------------*/
+    .banner-resp {
+        display: none;
+    }
+    .banner-desk {
+        display: block;
+        height: 261px;
+    }
+    /* -------------------- Newsletter Desktop ------------------------------------------*/
+    .newsletter p,
+    .newsletter form input {
+        display: inline-block;
+    }
+    .newsletter p i,
+    .newsletter p {
+        padding-right: 30px;
+    }
+    .newsletter form input {
+        padding: 7.5pt 5%;
+    }
+    .newsletter form button {
+        padding: 8pt 5%;
+    }
+    /* -------------------- Links Desktop ------------------- */
+    .links div {
+        display: inline-block;
+        -webkit-transform: skewX(170deg);
+        -moz-transform: skewX(170deg);
+        -ms-transform: skewX(170deg);
+        transform: skewX(170deg);
+    }
+    /* -------------------- Vitrine Desktop ------------------------------------------*/
+    .titulopagina {
+        float: right;
+        width: 60%;
+        margin-right: 65pt;
+    }
+    #vitrine-produtos div {
+        max-width: 30%;
+    }
+    .comprar,
+    .comprar:hover {
+        color: #FFF;
+    }
+    .login, .cadastro, .login:hover, .cadastro:hover{
+      color: #FFF;
+      width: 45%;
+      margin: auto;
+    }
+    /* -------------------- Coluna Lateral Desktop ------------------------------------------*/
+    .sidebar {
+        display: block;
+        margin: 0pt 5pt 5pt 65pt;
+        width: 230px;
+        float: left;
+    }
+    .sidebar h3 {
+        color: #FFF;
+        padding-bottom: 15px;
+    }
+    .sidebar div {
+        margin: 30pt 0;
+        padding: 15pt 0;
+        background: #282E6C;
+    }
+    .sidebar i {
+        padding-right: 10px;
+    }
+    .revista p a,
+    .revista p {
+        color: #fff;
+        text-decoration: none;
+        padding-top: 20px;
+        padding-right: 10px;
+        text-align: right;
+    }
+    .sidebar img {
+        width: 100%;
+    }
+    /* -------------------- Publicidade Desktop ----------------------------------------*/
+    .pubAnuncio {
+        padding-top: 0;
+    }
+    .pubAnuncio img:nth-child(3) {
+        display: inline-block;
+    }
+    .pubAnuncio img {
+        max-width: 30%;
+        padding-bottom: 0;
+        padding-left: 15px;
+    }
+    /* -------------------- Facebook Desktop ------------------------------------------*/
+    .facebook,
+    .fb-page {
+        display: none;
+    }
+    /* -------------------- Footer Desktop ----------------------------------------*/
+    .social {
+        height: 150px;
+        background-image: url("../images/bg-redes.png");
+        padding: 40px;
+    }
+    .socialdesk h3 {
+        color: #282E6C;
+        font-weight: 700;
+    }
+    .social .redes-sociais .fa-facebook-square {
+        color: #3B5998;
+    }
+    .social .redes-sociais .fa-instagram {
+        color: #cd486b;
+    }
+    .social .redes-sociais .fa-youtube-square {
+        color: #cc181e;
+    }
+    .social .app .fa-apple {
+        color: #000;
+    }
+    .social .app .fa-android {
+        color: #a4c639;
+    }
+    .pagamento,
+    .seguranca {
+        display: inline-block;
+        padding-left: 200px;
+    }
+    .pagamentoMobile {
+        display: none;
+    }
+    .pagamentoDesktop {
+        display: block;
+    }
+    .links-footer {
+        display: block;
+    }
+    .socialmobile {
+        display: none;
+    }
+    .socialdesk {
+        display: inline-block;
+    }
+    .logo-rodape {
+        float: left;
+        width: 30%;
+    }
+    .logo-rodape img {
+        max-width: 100%;
+        margin-top: 5em;
+    }
+    .links-footer {
+        display: -webkit-box;
+        /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box;
+        /* OLD - Firefox 19- (buggy but mostly works) */
+        display: -ms-flexbox;
+        /* TWEENER - IE 10 */
+        display: -webkit-flex;
+        /* NEW - Chrome */
+        display: flex;
+        /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    }
+    .links-footer nav {
+        padding: 30px 50px;
+    }
+    .links-footer nav h3 {
+        padding-bottom: 10px;
+        text-transform: uppercase;
+    }
+    .links-footer nav a {
+        -moz-text-decoration: none;
+        text-decoration: none;
+        color: #FFF;
+        display: block;
+        text-transform: uppercase;
+    }
+    .endereco {
+        font-size: 0.9em;
+    }
